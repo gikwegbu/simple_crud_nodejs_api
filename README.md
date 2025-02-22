@@ -66,5 +66,5 @@ With some of the exported functions in our `users_db`, we can easily call and aw
 ### ⚠️ Update Users
 To perform this action, users have to be `authenticated` and `owner` of the account. Once that is sorted, the property they want to updated is passed, and their object saved.
 
-### ❌ <u>Delete Users</u>
+### ❌ <ins>Delete Users</ins>
 To perform this action, users have to be `authenticated` and `owner` of the account. Once that is sorted, they can then delete their account using the `deleteUserById()` exported function.
