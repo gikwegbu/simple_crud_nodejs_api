@@ -6,6 +6,7 @@ import compression from 'compression';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import router from './router';
+import { mongoDb_username, mongoDb_pwd } from './helpers/env';
 
 const app = express();
 
@@ -23,7 +24,8 @@ server.listen(8080, () => {
     console.log('🚀🚀 Server is running on port http://localhost:8080/');
 });
 
-const mongoURL = "mongodb+srv://devGeorge:devGeorge@cluster0.zdb1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const mongoURL = "mongodb+srv://mongoDb_username:mongoDb_pwd@cluster0.zdb1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const mongoURL = "mongodb+srv://"+mongoDb_username+":"+mongoDb_pwd+"@cluster0.zdb1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 mongoose.Promise = Promise
 mongoose.connect(mongoURL);
