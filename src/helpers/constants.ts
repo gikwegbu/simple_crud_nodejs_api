@@ -1,0 +1,1 @@
+export const MONGOOSE_IDENTITY_ID = 'identity._id';
